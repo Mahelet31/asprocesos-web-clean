@@ -40,7 +40,7 @@ export function Header() {
               className="flex items-center gap-2 text-sm font-bold text-navy hover:text-teal transition-colors"
             >
               <Phone className="h-4 w-4" />
-              +52 81 2947 4909
+              +52 81 4347 1100
             </a>
             <a
               href="#contacto"

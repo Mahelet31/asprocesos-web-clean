@@ -290,8 +290,8 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-pure">Teléfono</h3>
-                <a href="tel:+528129474909" className="text-sm text-cloud hover:text-sky transition-colors">
-                  +52 81 2947 4909
+                <a href="tel:+528143471100" className="text-sm text-cloud hover:text-sky transition-colors">
+                  +52 81 4347 1100
                 </a>
               </div>
             </div>
@@ -314,8 +314,8 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-pure">Horario</h3>
-                <p className="text-sm text-cloud">Lunes a Viernes: 8:00 - 18:00</p>
-                <p className="text-sm text-cloud">Sábados: 9:00 - 14:00</p>
+                <p className="text-sm text-cloud">Lunes a Viernes: 9:00 - 18:00</p>
+                <p className="text-sm text-cloud">Sábados: 9:00 - 13:00</p>
               </div>
             </div>
           </div>
