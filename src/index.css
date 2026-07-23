@@ -1,0 +1,86 @@
+@import "tailwindcss" source(none);
+@source "../src";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Lato", system-ui, sans-serif;
+  --font-display: "Lato", system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  /* Brand colors in oklch */
+  --color-navy: oklch(0.266 0.035 213.856);
+  --color-teal: oklch(0.55 0.08 202.954);
+  --color-sky: oklch(0.692 0.075 203.392);
+  --color-cloud: oklch(0.946 0 89.876);
+  --color-pure: oklch(1 0 89.876);
+
+  --color-background: var(--color-pure);
+  --color-foreground: var(--color-navy);
+  --color-card: var(--color-pure);
+  --color-card-foreground: var(--color-navy);
+  --color-popover: var(--color-pure);
+  --color-popover-foreground: var(--color-navy);
+  --color-primary: var(--color-navy);
+  --color-primary-foreground: var(--color-pure);
+  --color-secondary: var(--color-cloud);
+  --color-secondary-foreground: var(--color-navy);
+  --color-muted: var(--color-cloud);
+  --color-muted-foreground: var(--color-teal);
+  --color-accent: var(--color-sky);
+  --color-accent-foreground: var(--color-navy);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-destructive-foreground: oklch(0.984 0.003 247.858);
+  --color-border: var(--color-cloud);
+  --color-input: var(--color-cloud);
+  --color-ring: var(--color-teal);
+}
+
+:root {
+  --radius: 0.5rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility section-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media (min-width: 640px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@utility container-wide {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
