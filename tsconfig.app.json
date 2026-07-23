@@ -10,6 +10,8 @@
       "@/*": ["src/*"]
     },
 
+    "ignoreDeprecations": "6.0",
+
     "types": ["vite/client"],
     "allowArbitraryExtensions": true,
     "skipLibCheck": true,
