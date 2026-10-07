@@ -218,8 +218,6 @@ export function Contact() {
 
                     <option value="remodelacion">Remodelación e interiorismo</option>
 
-                    <option value="obra-civil">Obra civil</option>
-
                     <option value="estructura-metalica">Estructuras metálicas</option>
 
                     <option value="plafon">Plafón falso</option>

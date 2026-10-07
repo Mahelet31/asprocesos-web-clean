@@ -24,7 +24,7 @@ export function Hero() {
             Remodelación para espacios corporativos y comerciales
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-pure leading-tight text-balance">
-            Transformamos espacios con remodelación, obra civil e ingeniería.
+            Transformamos espacios con remodelación, rehabilitación y adecuación.
           </h1>
           <p className="mt-6 text-lg md:text-xl text-cloud max-w-2xl leading-relaxed">
             Desarrollamos proyectos para oficinas, edificios, plazas comerciales, residencias y áreas comunes, cuidando cada etapa desde la planeación hasta la entrega.

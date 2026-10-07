@@ -15,9 +15,9 @@ const services = [
   },
   {
     icon: HardHat,
-    title: "Obra Civil",
+    title: "Albañilería y Remodelaciones",
     description:
-      "Servicios de albañilería, demoliciones, adecuaciones y trabajos civiles para proyectos de remodelación y ampliación.",
+      "Reparamos, renovamos y adaptamos espacios existentes. Trabajos de albañilería, resanes, reparación de muros y pisos, demoliciones menores y adecuaciones para mejorar la funcionalidad y apariencia de tus instalaciones.",
   },
   {
     icon: Hammer,

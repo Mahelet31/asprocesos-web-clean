@@ -19,10 +19,7 @@ export function About() {
               Planeamos cada proyecto para ejecutarlo con certeza.
             </h2>
             <p className="mt-5 text-lg text-navy/70 leading-relaxed">
-              En <strong>ASProcesos</strong> desarrollamos proyectos de remodelación,
-              rehabilitación y obra civil para espacios residenciales, comerciales y
-              corporativos en Nuevo León. Nuestro compromiso es transformar cada espacio
-              mediante soluciones funcionales, seguras y de alta calidad.
+              En <strong>ASProcesos</strong> Desarrollamos proyectos de remodelación, rehabilitación y adecuación de espacios residenciales, comerciales y corporativos en Nuevo León. Nuestro compromiso es transformar cada espacio mediante soluciones funcionales, seguras y de alta calidad.
             </p>
             <p className="mt-4 text-lg text-navy/70 leading-relaxed">
               Más que ejecutar trabajos, planificamos cada proyecto desde el inicio.
