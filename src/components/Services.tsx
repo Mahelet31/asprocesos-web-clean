@@ -1,29 +1,56 @@
-import { Ruler, Truck, HardHat, Hammer } from "lucide-react";
+
+import {
+  PaintRoller,
+  Hammer,
+  Droplets,
+  Building2,
+  Trees,
+  ClipboardList,
+  Workflow,
+} from "lucide-react";
 
 const services = [
   {
-    icon: Ruler,
-    title: "Remodelación e Interiorismo",
+    icon: PaintRoller,
+    title: "Remodelación y acabados",
     description:
-      "Adecuación de oficinas, departamentos, áreas sociales y espacios comerciales mediante plafones, acabados, restauración de muros y soluciones de interiorismo funcional.",
-  },
-  {
-    icon: Truck,
-    title: "Rehabilitación Estructural",
-    description:
-      "Rehabilitación de barandales, cubiertas, estructuras metálicas, techos y trabajos de herrería para prolongar la vida útil de los inmuebles.",
-  },
-  {
-    icon: HardHat,
-    title: "Albañilería y Remodelaciones",
-    description:
-      "Reparamos, renovamos y adaptamos espacios existentes. Trabajos de albañilería, resanes, reparación de muros y pisos, demoliciones menores y adecuaciones para mejorar la funcionalidad y apariencia de tus instalaciones.",
+      "Renovamos viviendas, oficinas y comercios mediante trabajos de tablaroca, plafones, pintura, albañilería menor y recubrimientos para muros y pisos.",
   },
   {
     icon: Hammer,
-    title: "Ingeniería y Gestión del Proyecto",
+    title: "Herrería y cubiertas",
     description:
-      "Cada proyecto incluye levantamiento técnico, alcances definidos, programa de trabajo y seguimiento documental para asegurar control y cumplimiento.",
+      "Fabricamos, instalamos y rehabilitamos barandales, canceles, puertas, portones y protecciones. También realizamos techumbres con estructura metálica, lámina y policarbonato.",
+  },
+  {
+    icon: Droplets,
+    title: "Instalaciones hidráulicas y pluviales",
+    description:
+      "Instalamos y reparamos tuberías, válvulas, medidores y coladeras. Atendemos fugas, distribución de agua y sistemas de desalojo pluvial.",
+  },
+  {
+    icon: Building2,
+    title: "Mantenimiento de inmuebles",
+    description:
+      "Conservamos y reparamos luminarias, herrajes, rejillas y aislamiento de tuberías. Realizamos sellado de filtraciones y rehabilitación de acabados afectados por humedad.",
+  },
+  {
+    icon: Trees,
+    title: "Áreas comunes y equipamiento",
+    description:
+      "Adecuamos áreas sociales, estacionamientos y espacios para mascotas. Instalamos señalización, protecciones y equipamiento para mejorar su uso y funcionalidad.",
+  },
+  {
+    icon: ClipboardList,
+    title: "Gestión y supervisión de proyectos",
+    description:
+      "Realizamos levantamientos, presupuestos, definición de alcances y programación de actividades. Supervisamos los trabajos y documentamos avances y entregas.",
+  },
+  {
+    icon: Workflow,
+    title: "Procesos y documentación",
+    description:
+      "Elaboramos procedimientos, formatos, controles e indicadores para estandarizar actividades, organizar la operación y facilitar el seguimiento de tu empresa.",
   },
 ];
 
@@ -32,26 +59,42 @@ export function Services() {
     <section id="servicios" className="py-20 md:py-28 bg-pure">
       <div className="container-wide section-padding">
         <div className="max-w-3xl mx-auto text-center mb-14">
-          <span className="text-sm font-bold text-teal uppercase tracking-wider">Nuestros servicios</span>
+          <span className="text-sm font-bold text-teal uppercase tracking-wider">
+            Nuestros servicios
+          </span>
+
           <h2 className="mt-3 text-3xl md:text-4xl font-black text-navy">
-            Soluciones constructivas de principio a fin
+            Soluciones para espacios, proyectos y procesos
           </h2>
+
           <p className="mt-4 text-lg text-navy/70">
-            Acompañamos cada etapa de tu proyecto para garantizar calidad, puntualidad y resultados que superen expectativas.
+            Acompañamos a nuestros clientes con soluciones de remodelación,
+            mantenimiento, adecuación y gestión para mejorar sus espacios y
+            operaciones.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
           {services.map((service) => (
             <div
-              key={service.title}
-              className="group rounded-xl border border-cloud bg-pure p-6 transition-all hover:border-teal hover:shadow-lg hover:-translate-y-1"
-            >
+  key={service.title}
+  className={`group rounded-xl border border-cloud bg-pure p-6 transition-all hover:border-teal hover:shadow-lg hover:-translate-y-1 ${
+    services.length === 7 && service.title === "Procesos y documentación"
+      ? "lg:col-span-6"
+: "lg:col-span-2"
+  }`}
+>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-cloud text-navy transition-colors group-hover:bg-teal group-hover:text-pure">
                 <service.icon className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-bold text-navy mb-2">{service.title}</h3>
-              <p className="text-sm leading-relaxed text-navy/70">{service.description}</p>
+
+              <h3 className="text-xl font-bold text-navy mb-2">
+                {service.title}
+              </h3>
+
+              <p className="text-sm leading-relaxed text-navy/70">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>

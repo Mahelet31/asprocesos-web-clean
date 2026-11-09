@@ -17,10 +17,18 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-pure/95 backdrop-blur-sm border-b border-cloud">
       <div className="container-wide section-padding">
         <div className="flex h-16 items-center justify-between">
-          <a href="#inicio" className="flex items-center gap-2 text-navy font-bold text-lg">
-            <img src={logo} alt="AS PROCESOS" className="h-9 w-auto"  translate="no" />
-            <span translate="no">AS PROCESOS</span>
-          </a>
+          <a
+  href="#inicio"
+  className="flex items-center"
+  aria-label="AS PROCESOS - Inicio"
+>
+  <img
+  src={logo}
+  alt="AS PROCESOS"
+  className="h-12 w-auto object-contain"
+  translate="no"
+/>
+</a>
 
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
