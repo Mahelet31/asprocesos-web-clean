@@ -23,10 +23,7 @@ export function Footer() {
             </a>
 
             <p className="mt-4 text-sm text-navy/70 max-w-xs">
-              Especialistas en remodelación, obra civil, estructuras metálicas e
-              ingeniería para espacios residenciales, comerciales y corporativos
-              en Nuevo León.
-            </p>
+              Soluciones en remodelación, mantenimiento y adecuación de espacios residenciales, comerciales y corporativos.</p>
           </div>
 
           {/* Navegación */}
