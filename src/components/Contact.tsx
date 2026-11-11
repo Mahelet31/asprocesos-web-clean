@@ -216,19 +216,38 @@ export function Contact() {
                       Selecciona un servicio
                     </option>
 
-                    <option value="remodelacion">Remodelación e interiorismo</option>
+                    <option value="remodelacion-acabados">
+                      Remodelación y acabados
+                    </option>
 
-                    <option value="estructura-metalica">Estructuras metálicas</option>
+                    <option value="herreria-cubiertas">
+                      Herrería y cubiertas
+                    </option>
 
-                    <option value="plafon">Plafón falso</option>
+                     <option value="instalaciones-hidraulicas">
+                     Instalaciones hidráulicas y pluviales
+                    </option>
 
-                    <option value="albanileria">Albañilería</option>
+                    <option value="mantenimiento-inmuebles">
+                     Mantenimiento de inmuebles
+                    </option>
 
-                    <option value="demolicion">Demolición</option>
+                    <option value="areas-comunes">
+                     Áreas comunes y equipamiento
+                    </option>
 
-                    <option value="proyecto-integral">Proyecto integral</option>
+                    <option value="gestion-proyectos">
+                     Gestión y supervisión de proyectos
+                      </option>
 
-                    <option value="otro">Otro</option>
+                    <option value="procesos-documentacion">
+                      Procesos y documentación
+                    </option>
+
+                    <option value="otro">
+                      Otro
+                    </option>
+
                   </select>
                     
                   {errors.projectType && (
@@ -300,8 +319,8 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-pure">Correo</h3>
-                <a href="mailto:ayala25899@gmail.com" className="text-sm text-cloud hover:text-sky transition-colors">
-                  ayala25899@gmail.com
+                <a href="mailto:aayala@asprocesos.com" className="text-sm text-cloud hover:text-sky transition-colors">
+                 aayala@asprocesos.com
                 </a>
               </div>
             </div>
